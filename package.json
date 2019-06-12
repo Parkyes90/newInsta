@@ -1,0 +1,49 @@
+{
+  "name": "uberclone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql",
+    "pretypes": "gql-merge --out-file ./src/schema.graphql ./src/api/**/*.graphql",
+    "types": "graphql-to-typescript ./src/schema.graphql ./src/types/graph.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parkyes90/UberClone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Parkyes90/UberClone/issues"
+  },
+  "homepage": "https://github.com/Parkyes90/UberClone#readme",
+  "dependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/cors": "^2.8.5",
+    "@types/dotenv": "^6.1.1",
+    "@types/helmet": "0.0.43",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^12.0.8",
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^3.0.6",
+    "class-validator": "^0.9.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "gql-merge": "0.0.6",
+    "graphql-to-typescript": "^0.1.2",
+    "graphql-tools": "^4.0.4",
+    "graphql-yoga": "^1.17.4",
+    "helmet": "^3.18.0",
+    "merge-graphql-schemas": "^1.5.8",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "pg": "^7.11.0",
+    "ts-lint": "^4.5.1",
+    "ts-node": "^8.2.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typeorm": "^0.2.18",
+    "typescript": "^3.5.1"
+  }
+}
